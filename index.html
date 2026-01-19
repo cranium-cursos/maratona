@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cranium - Maratona Fisioterapia em Cabeça e Pescoço</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#10C1B4",
+              secondary: "#1E4853",
+              accent: "#153D84",
+              "accent-light": "#A5B8E3",
+              "background-light": "#FFFFFF",
+              "background-dark": "#0A1114",
+            },
+            fontFamily: {
+              display: ["Montserrat", "sans-serif"],
+              sans: ["Inter", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      @layer utilities {
+        .gradient-text {
+          background-clip: text;
+          -webkit-background-clip: text;
+          color: transparent;
+        }
+        .tech-glow {
+          box-shadow: 0 0 20px rgba(16, 193, 180, 0.3);
+        }
+        .mask-gradient {
+          mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+          -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+        }
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
