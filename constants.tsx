@@ -5,32 +5,32 @@ export const EXPERTS: Expert[] = [
   {
     name: "Rafael Tardin",
     shortName: "Rafael",
-    imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuD9y3H1x6W-K8U7-XnQn0-I-R7-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y" // Placeholder as I can't generate the specific long data URI in this block, but mapping to Image 3
+    imageUrl: "/images/rafael-tardin.jpg"
   },
   {
     name: "Gustavo Pacheco",
     shortName: "Gustavo",
-    imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuD9y3H1x6W-K8U7-XnQn0-I-R7-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y" // Image 2
+    imageUrl: "/images/gustavo-pacheco.jpg"
   },
   {
     name: "Bruna Cabugueira",
     shortName: "Bruna",
-    imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuD9y3H1x6W-K8U7-XnQn0-I-R7-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y" // Image 1
+    imageUrl: "/images/bruna-cabugueira.jpg"
   },
   {
     name: "Samuel Lodovichi",
     shortName: "Samuel",
-    imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuD9y3H1x6W-K8U7-XnQn0-I-R7-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y" // Image 5
+    imageUrl: "/images/samuel-lodovichi.jpg"
   },
   {
     name: "Leonardo Nascimento",
     shortName: "Leonardo",
-    imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuD9y3H1x6W-K8U7-XnQn0-I-R7-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y" // Image 4
+    imageUrl: "/images/leonardo-nascimento.jpg"
   },
   {
     name: "Thaynara Nascimento",
     shortName: "Thaynara",
-    imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuD9y3H1x6W-K8U7-XnQn0-I-R7-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y-W-Y" // Image 6
+    imageUrl: "/images/thaynara-nascimento.jpg"
   }
 ];
 
@@ -75,7 +75,7 @@ export const SCHEDULE: ScheduleDay[] = [
     expert: {
       name: "Dr. Rafael Tardin",
       role: "ESPECIALISTA EM DTM",
-      imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuD6X-r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6", // Image 3
+      imageUrl: "/images/rafael-tardin.jpg",
       icon: "face",
       colorClass: "bg-secondary"
     }
@@ -90,7 +90,7 @@ export const SCHEDULE: ScheduleDay[] = [
     expert: {
       name: "Dr. Gustavo Pacheco",
       role: "ESP. VESTIBULAR",
-      imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuD2X-r2r2r2r2r2r2r2r2r2r2r2r2r2r2r2r2r2r2r2r2r2r2r2r2r2r2r2r2r2r2r2r2r2r2r2r2r2r2r2r2r2r2r2r2r2", // Image 2
+      imageUrl: "/images/gustavo-pacheco.jpg",
       icon: "graphic_eq",
       colorClass: "bg-accent"
     }
@@ -105,7 +105,7 @@ export const SCHEDULE: ScheduleDay[] = [
     expert: {
       name: "Dra. Bruna Cabugueira",
       role: "ESP. ZUMBIDO",
-      imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuD1X-r1r1r1r1r1r1r1r1r1r1r1r1r1r1r1r1r1r1r1r1r1r1r1r1r1r1r1r1r1r1r1r1r1r1r1r1r1r1r1r1r1r1r1r1r1", // Image 1
+      imageUrl: "/images/bruna-cabugueira.jpg",
       icon: "hearing",
       colorClass: "bg-secondary"
     }
@@ -120,7 +120,7 @@ export const SCHEDULE: ScheduleDay[] = [
     expert: {
       name: "Dr. Samuel Lodovichi",
       role: "HEAD & NECK PHYSIO",
-      imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuD5X-r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5", // Image 5
+      imageUrl: "/images/samuel-lodovichi.jpg",
       icon: "medical_services",
       colorClass: "bg-primary"
     }
@@ -135,7 +135,7 @@ export const SCHEDULE: ScheduleDay[] = [
     expert: {
       name: "Dr. Leonardo Nascimento",
       role: "ESP. COLUNA",
-      imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuD4X-r4r4r4r4r4r4r4r4r4r4r4r4r4r4r4r4r4r4r4r4r4r4r4r4r4r4r4r4r4r4r4r4r4r4r4r4r4r4r4r4r4r4r4r4r2", // Image 4
+      imageUrl: "/images/leonardo-nascimento.jpg",
       icon: "accessibility_new",
       colorClass: "bg-secondary"
     }
@@ -150,7 +150,7 @@ export const SCHEDULE: ScheduleDay[] = [
     expert: {
       name: "Dra. Thaynara Nascimento",
       role: "REAB. VISUAL",
-      imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuD6X-r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6r6", // Image 6
+      imageUrl: "/images/thaynara-nascimento.jpg",
       icon: "visibility",
       colorClass: "bg-accent"
     }
@@ -166,7 +166,7 @@ export const SCHEDULE: ScheduleDay[] = [
     expert: {
       name: "Dr. Samuel Lodovichi",
       role: "INOVAÇÃO CLÍNICA",
-      imageUrl: "https://lh3.googleusercontent.com/aida-public/AB6AXuD5X-r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5r5", // Image 5
+      imageUrl: "/images/samuel-lodovichi.jpg",
       icon: "smart_toy",
       colorClass: "bg-primary"
     }
