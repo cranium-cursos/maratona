@@ -71,7 +71,7 @@ export const SCHEDULE: ScheduleDay[] = [
     weekday: "Segunda-feira",
     time: "20:00H",
     title: "DTM",
-    topics: ["Principais conceitos", "Passos para o tratamento", "Estudo de caso"],
+    topics: ["Caso clínico"],
     expert: {
       name: "Dr. Rafael Tardin",
       role: "ESPECIALISTA EM DTM",
@@ -86,7 +86,7 @@ export const SCHEDULE: ScheduleDay[] = [
     weekday: "Terça-feira",
     time: "20:00H",
     title: "SISTEMA VESTIBULAR",
-    topics: ["Principais conceitos", "Passos para o tratamento", "Estudo de caso"],
+    topics: ["Caso clínico"],
     expert: {
       name: "Dr. Gustavo Pacheco",
       role: "ESP. VESTIBULAR",
@@ -101,7 +101,7 @@ export const SCHEDULE: ScheduleDay[] = [
     weekday: "Quarta-feira",
     time: "20:00H",
     title: "ZUMBIDO",
-    topics: ["Principais conceitos", "Passos para o tratamento", "Estudo de caso"],
+    topics: ["Caso clínico"],
     expert: {
       name: "Dra. Bruna Cabugueira",
       role: "ESP. ZUMBIDO",
@@ -116,7 +116,7 @@ export const SCHEDULE: ScheduleDay[] = [
     weekday: "Quinta-feira",
     time: "20:00H",
     title: "CEFALEIA",
-    topics: ["Principais conceitos", "Passos para o tratamento", "Estudo de caso"],
+    topics: ["Caso clínico"],
     expert: {
       name: "Dr. Samuel Lodovichi",
       role: "HEAD & NECK PHYSIO",
@@ -131,7 +131,7 @@ export const SCHEDULE: ScheduleDay[] = [
     weekday: "Domingo",
     time: "20:00H",
     title: "CERVICAL",
-    topics: ["Principais conceitos", "Passos para o tratamento", "Estudo de caso"],
+    topics: ["Caso clínico"],
     expert: {
       name: "Dr. Leonardo Nascimento",
       role: "ESP. COLUNA",
@@ -146,7 +146,7 @@ export const SCHEDULE: ScheduleDay[] = [
     weekday: "Segunda-feira",
     time: "20:00H",
     title: "DISFUNÇÃO OCULOMOTORA",
-    topics: ["Principais conceitos", "Passos para o tratamento", "Estudo de caso"],
+    topics: ["Caso clínico"],
     expert: {
       name: "Dra. Thaynara Nascimento",
       role: "REAB. VISUAL",

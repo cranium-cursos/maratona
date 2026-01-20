@@ -66,7 +66,7 @@ const Hero: React.FC = () => {
                 </div>
 
                 <h1 className="font-display text-3xl md:text-5xl lg:text-6xl font-black text-secondary dark:text-white leading-tight mb-6">
-                    MARATONA FISIOTERAPIA EM<br className="hidden md:block" />
+                    MARATONA FISIOTERAPIA EM <br className="hidden md:block" />
                     <span className="bg-clip-text text-transparent bg-gradient-to-r from-secondary via-primary to-accent">
                         CABEÇA E PESCOÇO
                     </span>
@@ -175,13 +175,12 @@ const ScheduleSection: React.FC = () => (
                                     <span className="material-symbols-outlined text-primary text-sm animate-pulse">auto_awesome</span>
                                 </div>
                             )}
-                            <h3 className={`text-lg md:text-xl font-bold mb-3 transition-colors ${day.isExclusive ? 'text-white' : 'text-secondary dark:text-white group-hover:text-primary'}`}>
+                            <h3 className={`text-xl md:text-2xl font-bold mb-3 transition-colors ${day.isExclusive ? 'text-white' : 'text-secondary dark:text-white group-hover:text-primary'}`}>
                                 {day.title}
                             </h3>
                             <ul className={`text-sm space-y-2 mb-0 ${day.isExclusive ? 'text-slate-400' : 'text-slate-600 dark:text-slate-400'}`}>
                                 {day.topics.map((topic, idx) => (
                                     <li key={idx} className="flex items-start gap-2">
-                                        <span className="material-symbols-outlined text-[16px] text-primary mt-0.5">check_circle</span>
                                         {topic}
                                     </li>
                                 ))}
