@@ -10,7 +10,7 @@ const Header: React.FC = () => {
                 <img
                     alt="Cranium Logo"
                     className="h-8 md:h-10 dark:invert"
-                    src="/images/portal-cranium-logo.png"
+                    src="/images/portal-cranium-logo.webp"
                 />
                 <button
                     onClick={() => navigate('/proximos-passos')}
@@ -271,7 +271,7 @@ const Footer: React.FC = () => {
                         <img
                             alt="Cranium"
                             className="h-6 dark:invert"
-                            src="/images/portal-cranium-logo.png"
+                            src="/images/portal-cranium-logo.webp"
                         />
                         <span className="text-xs text-slate-500">© 2024 Cranium.</span>
                     </div>

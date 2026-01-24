@@ -5,32 +5,32 @@ export const EXPERTS: Expert[] = [
   {
     name: "Rafael Tardin",
     shortName: "Rafael",
-    imageUrl: "/images/rafael-tardin.jpg"
+    imageUrl: "/images/rafael-tardin.webp"
   },
   {
     name: "Gustavo Pacheco",
     shortName: "Gustavo",
-    imageUrl: "/images/gustavo-pacheco.jpg"
+    imageUrl: "/images/gustavo-pacheco.webp"
   },
   {
     name: "Bruna Cabugueira",
     shortName: "Bruna",
-    imageUrl: "/images/bruna-cabugueira.jpg"
+    imageUrl: "/images/bruna-cabugueira.webp"
   },
   {
     name: "Samuel Lodovichi",
     shortName: "Samuel",
-    imageUrl: "/images/samuel-lodovichi.jpg"
+    imageUrl: "/images/samuel-lodovichi.webp"
   },
   {
     name: "Leonardo Nascimento",
     shortName: "Leonardo",
-    imageUrl: "/images/leonardo-nascimento.jpg"
+    imageUrl: "/images/leonardo-nascimento.webp"
   },
   {
     name: "Thaynara Nascimento",
     shortName: "Thaynara",
-    imageUrl: "/images/thaynara-nascimento.jpg"
+    imageUrl: "/images/thaynara-nascimento.webp"
   }
 ];
 
@@ -75,7 +75,7 @@ export const SCHEDULE: ScheduleDay[] = [
     expert: {
       name: "Dr. Rafael Tardin",
       role: "ESPECIALISTA EM DTM",
-      imageUrl: "/images/rafael-tardin.jpg",
+      imageUrl: "/images/rafael-tardin.webp",
       icon: "face",
       colorClass: "bg-secondary"
     }
@@ -90,7 +90,7 @@ export const SCHEDULE: ScheduleDay[] = [
     expert: {
       name: "Dr. Gustavo Pacheco",
       role: "ESP. VESTIBULAR",
-      imageUrl: "/images/gustavo-pacheco.jpg",
+      imageUrl: "/images/gustavo-pacheco.webp",
       icon: "graphic_eq",
       colorClass: "bg-accent"
     }
@@ -105,7 +105,7 @@ export const SCHEDULE: ScheduleDay[] = [
     expert: {
       name: "Dra. Bruna Cabugueira",
       role: "ESP. ZUMBIDO",
-      imageUrl: "/images/bruna-cabugueira.jpg",
+      imageUrl: "/images/bruna-cabugueira.webp",
       icon: "hearing",
       colorClass: "bg-secondary"
     }
@@ -120,7 +120,7 @@ export const SCHEDULE: ScheduleDay[] = [
     expert: {
       name: "Dr. Samuel Lodovichi",
       role: "HEAD & NECK PHYSIO",
-      imageUrl: "/images/samuel-lodovichi.jpg",
+      imageUrl: "/images/samuel-lodovichi.webp",
       icon: "medical_services",
       colorClass: "bg-primary"
     }
@@ -135,7 +135,7 @@ export const SCHEDULE: ScheduleDay[] = [
     expert: {
       name: "Dr. Leonardo Nascimento",
       role: "ESP. COLUNA",
-      imageUrl: "/images/leonardo-nascimento.jpg",
+      imageUrl: "/images/leonardo-nascimento.webp",
       icon: "accessibility_new",
       colorClass: "bg-secondary"
     }
@@ -150,7 +150,7 @@ export const SCHEDULE: ScheduleDay[] = [
     expert: {
       name: "Dra. Thaynara Nascimento",
       role: "REAB. VISUAL",
-      imageUrl: "/images/thaynara-nascimento.jpg",
+      imageUrl: "/images/thaynara-nascimento.webp",
       icon: "visibility",
       colorClass: "bg-accent"
     }
@@ -166,7 +166,7 @@ export const SCHEDULE: ScheduleDay[] = [
     expert: {
       name: "Dr. Samuel Lodovichi",
       role: "INOVAÇÃO CLÍNICA",
-      imageUrl: "/images/samuel-lodovichi.jpg",
+      imageUrl: "/images/samuel-lodovichi.webp",
       icon: "smart_toy",
       colorClass: "bg-primary"
     }
