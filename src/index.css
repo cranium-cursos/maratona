@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .gradient-text {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+  .tech-glow {
+    box-shadow: 0 0 20px rgba(16, 193, 180, 0.3);
+  }
+  .mask-gradient {
+    mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}

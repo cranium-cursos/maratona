@@ -38,50 +38,8 @@
     rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
     rel="stylesheet" />
-  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-  <script>
-    tailwind.config = {
-      darkMode: "class",
-      theme: {
-        extend: {
-          colors: {
-            primary: "#10C1B4",
-            secondary: "#1E4853",
-            accent: "#153D84",
-            "accent-light": "#A5B8E3",
-            "background-light": "#FFFFFF",
-            "background-dark": "#0A1114",
-          },
-          fontFamily: {
-            display: ["Montserrat", "sans-serif"],
-            sans: ["Inter", "sans-serif"],
-          },
-        },
-      },
-    };
-  </script>
-  <style>
-    @layer utilities {
-      .gradient-text {
-        background-clip: text;
-        -webkit-background-clip: text;
-        color: transparent;
-      }
 
-      .tech-glow {
-        box-shadow: 0 0 20px rgba(16, 193, 180, 0.3);
-      }
 
-      .mask-gradient {
-        mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
-        -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
-      }
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-  </style>
   <script type="module" src="/index.tsx"></script>
 </head>
 
