@@ -1,6 +1,16 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #10C1B4;
+  --color-secondary: #1E4853;
+  --color-accent: #153D84;
+  --color-accent-light: #A5B8E3;
+  --color-background-light: #FFFFFF;
+  --color-background-dark: #0A1114;
+
+  --font-display: Montserrat, sans-serif;
+  --font-sans: Inter, sans-serif;
+}
 
 @layer utilities {
   .gradient-text {
@@ -8,9 +18,11 @@
     -webkit-background-clip: text;
     color: transparent;
   }
+
   .tech-glow {
     box-shadow: 0 0 20px rgba(16, 193, 180, 0.3);
   }
+
   .mask-gradient {
     mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
     -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
