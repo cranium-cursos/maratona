@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 const NextSteps: React.FC = () => {
     const [redirectSeconds, setRedirectSeconds] = useState(3);
     // TODO: Replace with the actual WhatsApp group link
-    const whatsappLink = "https://chat.whatsapp.com/IrTmfFhSo677jr9t1xEnLv";
+    const whatsappLink = "https://chat.whatsapp.com/ItxWHtk8Gpp8kLSuvAYkzK?mode=gi_t";
 
     useEffect(() => {
         // Pixel tracking placeholder
