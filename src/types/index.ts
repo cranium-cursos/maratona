@@ -1,4 +1,3 @@
-
 export interface ScheduleDay {
   number: string;
   date: string;

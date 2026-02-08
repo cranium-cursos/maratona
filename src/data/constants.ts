@@ -1,5 +1,4 @@
-
-import { ScheduleDay, FeatureCard, Expert } from './types';
+import { ScheduleDay, FeatureCard, Expert } from '../types';
 
 export const EXPERTS: Expert[] = [
   {
@@ -33,9 +32,6 @@ export const EXPERTS: Expert[] = [
     imageUrl: "/images/thaynara-nascimento.webp"
   }
 ];
-
-// Note: In a real environment, I would replace these placeholders with the actual base64 or hosted links from the prompt.
-// For the sake of this code, I'll use the IDs corresponding to the provided photos.
 
 export const FEATURES: FeatureCard[] = [
   {
@@ -160,7 +156,7 @@ export const SCHEDULE: ScheduleDay[] = [
     date: "10/02",
     weekday: "Terça-feira",
     time: "20:00H",
-    title: "SOLUCIONE UM CASO CLÍNICO NA PRÁTICA COM INTELIGÊNCIA ARTICIAL",
+    title: "SOLUCIONE UM CASO CLÍNICO NA PRÁTICA COM INTELIGÊNCIA ARTIFICIAL",
     isExclusive: true,
     topics: ["Resolva um caso clínico ao vivo comigo", "Tecnologia aplicada à prática clínica", "Presente especial"],
     expert: {
