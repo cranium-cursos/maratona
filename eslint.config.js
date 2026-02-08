@@ -31,6 +31,10 @@ export default [
         HTMLAnchorElement: 'readonly',
         HTMLDivElement: 'readonly',
         Record: 'readonly',
+        Blob: 'readonly',
+        URL: 'readonly',
+        fetch: 'readonly',
+        Uint8Array: 'readonly',
       },
     },
     plugins: {

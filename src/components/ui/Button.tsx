@@ -33,7 +33,7 @@ const Button: React.FC<ButtonProps> = ({
 }) => {
   return (
     <button
-      className={`inline-flex items-center justify-center gap-2 font-bold transition-all duration-200 active:scale-95 ${variantClasses[variant]} ${sizeClasses[size]} ${fullWidth ? 'w-full' : ''} ${className}`}
+      className={`inline-flex items-center justify-center gap-2 font-bold transition-all duration-200 active:scale-95 disabled:opacity-50 disabled:cursor-not-allowed ${variantClasses[variant]} ${sizeClasses[size]} ${fullWidth ? 'w-full' : ''} ${className}`}
       {...props}
     >
       {icon}

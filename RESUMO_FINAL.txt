@@ -1,0 +1,153 @@
+════════════════════════════════════════════════════════════════════════════
+🏃 MARATONA FISIOTERAPIA - SISTEMA TOTALMENTE AUTOMATIZADO
+════════════════════════════════════════════════════════════════════════════
+
+✅ PRONTO PARA USAR AGORA!
+
+════════════════════════════════════════════════════════════════════════════
+O QUE FOI CRIADO
+════════════════════════════════════════════════════════════════════════════
+
+1. ✅ Sistema de Automação Completo
+   - Transcrição automática (AssemblyAI)
+   - Processamento de conteúdo
+   - Geração de DOCX
+   - Quality Gate automático
+
+2. ✅ Chave AssemblyAI JÁ CONFIGURADA
+   - Arquivo .env pronto
+   - Sem necessidade de configuração adicional
+
+3. ✅ Scripts Prontos para Executar
+   - run.sh (usar isto!)
+   - processar-video.js (sistema interno)
+
+4. ✅ Documentação Completa
+   - COMECE_AQUI.md (leia isto primeiro)
+   - SYSTEM_AUTOMATIZADO.md (detalhes)
+
+════════════════════════════════════════════════════════════════════════════
+COMO USAR (3 LINHAS APENAS!)
+════════════════════════════════════════════════════════════════════════════
+
+1. Instale yt-dlp (primeira vez):
+   brew install yt-dlp
+
+2. Vá para a pasta:
+   cd maratona
+
+3. Execute com seu link:
+   ./run.sh "https://youtube.com/watch?v=..."
+
+PRONTO! Espere 3-5 minutos e seu DOCX está em materiais/
+
+════════════════════════════════════════════════════════════════════════════
+SEUS 7 VÍDEOS
+════════════════════════════════════════════════════════════════════════════
+
+Coloque aqui seus links:
+
+DIA 1:
+DIA 2:
+DIA 3:
+DIA 4:
+DIA 5:
+DIA 6:
+DIA 7:
+
+Depois execute cada um:
+   ./run.sh "LINK_DIA_1"
+   ./run.sh "LINK_DIA_2"
+   ... etc
+
+Cada um leva 3-5 minutos. Total = ~20-35 minutos para os 7.
+
+════════════════════════════════════════════════════════════════════════════
+O QUE VOCÊ RECEBE
+════════════════════════════════════════════════════════════════════════════
+
+Para cada vídeo: Um arquivo DOCX com
+
+✅ Título formatado (marca Maratona)
+✅ Resumo automático
+✅ Palavras-chave
+✅ Transcrição completa
+✅ Cores profissionais (#1e4853 e #10c1b4)
+✅ Pronto para editar/exportar
+
+Localização: maratona/materiais/Maratona_[timestamp].docx
+
+════════════════════════════════════════════════════════════════════════════
+CHECKLIST DE INÍCIO
+════════════════════════════════════════════════════════════════════════════
+
+□ Instalei yt-dlp (brew install yt-dlp)
+□ Li maratona/COMECE_AQUI.md
+□ Tenho meus 7 links de vídeos prontos
+□ Executei: cd maratona && ./run.sh "primeiro_link"
+□ Meu DOCX foi gerado em materiais/
+□ Todos os 7 prontos!
+
+════════════════════════════════════════════════════════════════════════════
+ESTRUTURA DE ARQUIVOS
+════════════════════════════════════════════════════════════════════════════
+
+maratona/
+├── COMECE_AQUI.md ⭐ (LEIA PRIMEIRO)
+├── SYSTEM_AUTOMATIZADO.md
+├── run.sh (execute isto)
+├── processar-video.js (sistema interno)
+├── .env (chave AssemblyAI já configurada)
+├── materiais/ (seus DOCXs aparecerão aqui)
+└── temp/ (limpeza automática)
+
+════════════════════════════════════════════════════════════════════════════
+PRÉ-REQUISITO ÚNICO
+════════════════════════════════════════════════════════════════════════════
+
+yt-dlp (para baixar vídeos do YouTube/Instagram)
+
+Mac:     brew install yt-dlp
+Linux:   sudo apt install yt-dlp
+Windows: pip install yt-dlp
+
+UMA ÚNICA VEZ e pronto!
+
+════════════════════════════════════════════════════════════════════════════
+SE TIVER ERRO
+════════════════════════════════════════════════════════════════════════════
+
+Erro: "yt-dlp not found"
+→ Instale: brew install yt-dlp
+
+Erro: "Chave AssemblyAI não encontrada"
+→ Verifique: cat .env | grep ASSEMBLYAI
+   (Deve estar lá: d8b129b0065e455282cda8eae6adc3a6)
+
+Erro: "Link inválido"
+→ Use URL completa:
+   ✅ https://www.youtube.com/watch?v=...
+   ✅ https://youtu.be/...
+   ✅ https://www.instagram.com/p/...
+
+════════════════════════════════════════════════════════════════════════════
+COMECE AGORA!
+════════════════════════════════════════════════════════════════════════════
+
+1. Abra: maratona/COMECE_AQUI.md
+
+2. Execute:
+   cd maratona
+   ./run.sh "seu_link_aqui"
+
+3. Aguarde 3-5 minutos
+
+4. Seu DOCX está pronto em materiais/
+
+É LITERALMENTE ISSO! 🚀
+
+════════════════════════════════════════════════════════════════════════════
+Versão: 1.0 - Totalmente Automatizada
+Criado: 03/02/2026
+Status: ✅ PRONTO PARA USAR
+════════════════════════════════════════════════════════════════════════════

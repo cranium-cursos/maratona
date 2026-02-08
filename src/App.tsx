@@ -5,6 +5,7 @@ import LoadingSpinner from './components/LoadingSpinner';
 
 const LandingPage = React.lazy(() => import('./pages/LandingPage'));
 const NextSteps = React.lazy(() => import('./pages/NextSteps'));
+const QuizPage = React.lazy(() => import('./pages/QuizPage'));
 const NotFound = React.lazy(() => import('./pages/NotFound'));
 
 const App: React.FC = () => {
@@ -19,6 +20,7 @@ const App: React.FC = () => {
             <Routes>
               <Route path="/" element={<LandingPage />} />
               <Route path="/proximos-passos" element={<NextSteps />} />
+              <Route path="/certificado" element={<QuizPage />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Suspense>
