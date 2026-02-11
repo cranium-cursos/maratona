@@ -54,36 +54,36 @@ export const quizQuestions: QuizQuestion[] = [
     question:
       'Palavra chave da aula 05 — Cervical com o professor Leonardo Nascimento:',
     options: [
-      'Ouvido interno',
-      'Neuromodulação',
-      'Orelha',
-      'Barulho',
+      'Pizza',
+      'Macarrão',
+      'Lanche',
+      'Japa',
     ],
-    correctAnswer: 2,
+    correctAnswer: 0,
   },
   {
     id: 6,
     question:
       'Palavra chave da aula 06 — Óculomotor com a professora Thaynara Nascimento:',
     options: [
-      'Ouvido interno',
-      'Neuromodulação',
-      'Orelha',
-      'Barulho',
+      'Olho',
+      'Glaucoma',
+      'Convergência',
+      'Reto medial',
     ],
-    correctAnswer: 2,
+    correctAnswer: 1,
   },
   {
     id: 7,
     question:
       'Palavra chave da aula 07 — Caso clínico com IA com o professor Samuel Lodovichi:',
     options: [
-      'Ouvido interno',
-      'Neuromodulação',
-      'Orelha',
-      'Barulho',
+      'Maria',
+      'Sophia',
+      'Joana',
+      'Beatriz',
     ],
-    correctAnswer: 2,
+    correctAnswer: 1,
   },
 ];
 
