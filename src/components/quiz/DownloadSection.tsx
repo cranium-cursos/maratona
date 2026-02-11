@@ -50,25 +50,49 @@ const DownloadSection: React.FC<DownloadSectionProps> = ({
         Baixar Certificado
       </Button>
 
-      <div className="mt-10 p-6 rounded-2xl bg-secondary/5 dark:bg-secondary/20 border border-secondary/20">
-        <h3 className="font-bold text-slate-900 dark:text-white mb-2">
-          Continue sua jornada no Portal Cranium
+      <div className="mt-10 p-8 rounded-2xl bg-gradient-to-br from-secondary/10 to-primary/10 dark:from-secondary/20 dark:to-primary/20 border border-secondary/20">
+        <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">
+          Você concluiu 7 casos clínicos. Imagine o que 38 cursos completos fariam pela sua carreira.
         </h3>
-        <p className="text-sm text-slate-600 dark:text-slate-300 mb-4">
-          Acesse conteúdos exclusivos, cursos e mentorias para elevar sua
-          prática clínica.
+        <p className="text-sm font-medium text-primary dark:text-primary mb-6">
+          Acesso imediato a +38 cursos em cabeça e pescoço, +170 aulas ao vivo gravadas, 1 curso novo todo mês, IA mentora especializada e certificado em cada curso — por menos de R$1,32 por dia.
         </p>
-        <Button
-          variant="secondary"
-          size="sm"
-          icon={<ExternalLink className="w-4 h-4" />}
-          onClick={() => {
-            trackEvent('portal_cranium_click');
-            window.open('https://portalcranium.com.br', '_blank', 'noopener,noreferrer');
-          }}
-        >
-          Conhecer o Portal
-        </Button>
+
+        <div className="text-sm text-slate-600 dark:text-slate-300 mb-6 space-y-3 text-left">
+          <p>
+            Nos últimos 7 dias você provou algo: que fisioterapia em cabeça e pescoço é o caminho que você quer seguir. A Maratona foi o primeiro passo. O Portal Cranium é o próximo.
+          </p>
+          <p>
+            São mais de 50 professores especialistas, aulas ao vivo todo mês e uma IA mentora treinada para responder suas dúvidas clínicas. Tudo por R$39,70/mês — menos do que você gasta em um almoço.
+          </p>
+          <p>
+            Quem completou a Maratona já está na frente de 90% dos fisioterapeutas que nunca se especializam. A pergunta é: você vai continuar?
+          </p>
+        </div>
+
+        <div className="flex flex-col sm:flex-row gap-3 justify-center">
+          <Button
+            size="lg"
+            icon={<ExternalLink className="w-5 h-5" />}
+            onClick={() => {
+              trackEvent('portal_checkout_click');
+              window.open('https://lp.craniumcursos.com.br/checkout/portal-cranium?utm_source=certificado', '_blank', 'noopener,noreferrer');
+            }}
+          >
+            QUERO ACESSAR O PORTAL AGORA
+          </Button>
+          <Button
+            variant="secondary"
+            size="lg"
+            icon={<ExternalLink className="w-4 h-4" />}
+            onClick={() => {
+              trackEvent('portal_landing_click');
+              window.open('https://lp.craniumcursos.com.br/campaign/portal-certificado', '_blank', 'noopener,noreferrer');
+            }}
+          >
+            Conhecer o Portal
+          </Button>
+        </div>
       </div>
     </div>
   );
