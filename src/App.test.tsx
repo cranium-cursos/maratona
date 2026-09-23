@@ -6,14 +6,14 @@ describe('App', () => {
   it('renders without crashing', async () => {
     render(<App />);
     await waitFor(() => {
-      expect(screen.getByText(/MARATONA FISIOTERAPIA/)).toBeInTheDocument();
+      expect(screen.getByText(/QUATRO DIAS PARA PENSAR A FISIOTERAPIA/)).toBeInTheDocument();
     });
   });
 
   it('renders the landing page by default', async () => {
     render(<App />);
     await waitFor(() => {
-      expect(screen.getByText('QUERO PARTICIPAR GRATUITAMENTE')).toBeInTheDocument();
+      expect(screen.getAllByText("CONHECER O PORTAL CRANIUM").length).toBeGreaterThan(0);
     });
   });
 });

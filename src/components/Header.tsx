@@ -47,7 +47,7 @@ const Header: React.FC = () => {
                         className="rounded-full tracking-wide"
                         aria-label="Inscrever-se na maratona"
                     >
-                        QUERO ME INSCREVER
+                        CONHECER O PORTAL
                     </Button>
                 </nav>
             </div>

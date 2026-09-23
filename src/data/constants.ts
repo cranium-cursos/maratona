@@ -1,169 +1,108 @@
 import { ScheduleDay, FeatureCard, Expert } from '../types';
 
-export const EXPERTS: Expert[] = [
-  {
-    name: "Rafael Tardin",
-    shortName: "Rafael",
-    imageUrl: "/images/rafael-tardin.webp"
-  },
-  {
-    name: "Gustavo Pacheco",
-    shortName: "Gustavo",
-    imageUrl: "/images/gustavo-pacheco.webp"
-  },
-  {
-    name: "Bruna Cabugueira",
-    shortName: "Bruna",
-    imageUrl: "/images/bruna-cabugueira.webp"
-  },
-  {
-    name: "Samuel Lodovichi",
-    shortName: "Samuel",
-    imageUrl: "/images/samuel-lodovichi.webp"
-  },
-  {
-    name: "Leonardo Nascimento",
-    shortName: "Leonardo",
-    imageUrl: "/images/leonardo-nascimento.webp"
-  },
-  {
-    name: "Thaynara Nascimento",
-    shortName: "Thaynara",
-    imageUrl: "/images/thaynara-nascimento.webp"
-  }
-];
-
 export const FEATURES: FeatureCard[] = [
   {
-    icon: "medical_services",
-    title: "Como manejar as principais patologias",
-    description: "Como manejar as principais patologias da região de cabeça e pescoço com segurança.",
+    icon: "psychology",
+    title: "Raciocínio clínico a partir de casos reais",
+    description: "Cada encontro discute um caso da região de cabeça e pescoço, conectando teoria e prática clínica.",
     colorClass: "bg-primary/10 text-primary"
   },
   {
-    icon: "touch_app",
-    title: "Abordagem prática",
-    description: "Abordagem prática e direta ao ponto que você pode aplicar no dia seguinte em seu consultório.",
+    icon: "medical_services",
+    title: "Diferentes recortes da mesma região",
+    description: "Quatro eixos clínicos distintos discutidos por quem aplica na clínica todos os dias.",
     colorClass: "bg-accent/10 text-accent"
   },
   {
-    icon: "psychology",
-    title: "Desenvolver o raciocínio clínico",
-    description: "Desenvolver o raciocínio clínico para diagnósticos diferenciais assertivos.",
+    icon: "touch_app",
+    title: "Prática, não teoria isolada",
+    description: "Conteúdo direto ao ponto, pensado para o chão da clínica, de clínico para clínico.",
     colorClass: "bg-secondary/10 text-secondary"
   },
   {
     icon: "assignment_turned_in",
-    title: "Com casos clínicos reais",
-    description: "Com casos clínicos reais discutidos por quem vive a prática clínica diariamente.",
+    title: "Continuidade no Portal Cranium",
+    description: "A discussão da Maratona é o início; o estudo continua no Portal Cranium.",
     colorClass: "bg-primary/10 text-primary"
+  }
+];
+
+export const EXPERTS: Expert[] = [
+  {
+    name: "Marianne Trajano",
+    shortName: "Marianne",
+    imageUrl: "/images/marianne-trajano.jpg"
+  },
+  {
+    name: "Rafael Tardin",
+    shortName: "Rafael",
+    imageUrl: "/images/rafael-tardin-2026.jpg"
+  },
+  {
+    name: "Samuel Lodovichi",
+    shortName: "Samuel",
+    imageUrl: "/images/samuel-lodovichi-2026.jpg"
   }
 ];
 
 export const SCHEDULE: ScheduleDay[] = [
   {
     number: "01",
-    date: "02/02",
+    date: "05/10",
     weekday: "Segunda-feira",
-    time: "20:00H",
-    title: "DTM",
-    topics: ["Caso clínico"],
-    expert: {
-      name: "Dr. Rafael Tardin",
-      role: "ESPECIALISTA EM DTM",
-      imageUrl: "/images/rafael-tardin.webp",
-      icon: "face",
-      colorClass: "bg-secondary"
-    }
-  },
-  {
-    number: "02",
-    date: "03/02",
-    weekday: "Terça-feira",
-    time: "20:00H",
+    time: "[horário em confirmação]",
     title: "SISTEMA VESTIBULAR",
-    topics: ["Caso clínico"],
+    topics: ["Caso clínico — recorte em confirmação"],
     expert: {
-      name: "Dr. Gustavo Pacheco",
-      role: "ESP. VESTIBULAR",
-      imageUrl: "/images/gustavo-pacheco.webp",
+      name: "Marianne Trajano",
+      role: "SISTEMA VESTIBULAR",
+      imageUrl: "/images/marianne-trajano.jpg",
       icon: "graphic_eq",
       colorClass: "bg-accent"
     }
   },
   {
-    number: "03",
-    date: "04/02",
-    weekday: "Quarta-feira",
-    time: "20:00H",
-    title: "ZUMBIDO",
-    topics: ["Caso clínico"],
+    number: "02",
+    date: "06/10",
+    weekday: "Terça-feira",
+    time: "[horário em confirmação]",
+    title: "[EIXO EM CONFIRMAÇÃO]",
+    topics: ["Convidado(a) e recorte em confirmação"],
     expert: {
-      name: "Dra. Bruna Cabugueira",
-      role: "ESP. ZUMBIDO",
-      imageUrl: "/images/bruna-cabugueira.webp",
-      icon: "hearing",
+      name: "[convidado(a) em confirmação]",
+      role: "PAUTA EM CONFIRMAÇÃO",
+      imageUrl: "/images/portal-cranium-logo.webp",
+      icon: "help_outline",
+      colorClass: "bg-secondary"
+    }
+  },
+  {
+    number: "03",
+    date: "07/10",
+    weekday: "Quarta-feira",
+    time: "[horário em confirmação]",
+    title: "DTM",
+    topics: ["Caso clínico — recorte em confirmação"],
+    expert: {
+      name: "Rafael Tardin",
+      role: "DTM",
+      imageUrl: "/images/rafael-tardin-2026.jpg",
+      icon: "face",
       colorClass: "bg-secondary"
     }
   },
   {
     number: "04",
-    date: "05/02",
+    date: "08/10",
     weekday: "Quinta-feira",
-    time: "20:00H",
-    title: "CEFALEIA",
-    topics: ["Caso clínico"],
+    time: "[horário em confirmação]",
+    title: "[EIXO EM CONFIRMAÇÃO]",
+    topics: ["Recorte em confirmação"],
     expert: {
-      name: "Dr. Samuel Lodovichi",
-      role: "HEAD & NECK PHYSIO",
-      imageUrl: "/images/samuel-lodovichi.webp",
+      name: "Samuel Lodovichi",
+      role: "PAUTA EM CONFIRMAÇÃO",
+      imageUrl: "/images/samuel-lodovichi-2026.jpg",
       icon: "medical_services",
-      colorClass: "bg-primary"
-    }
-  },
-  {
-    number: "05",
-    date: "08/02",
-    weekday: "Domingo",
-    time: "20:00H",
-    title: "CERVICAL",
-    topics: ["Caso clínico"],
-    expert: {
-      name: "Dr. Leonardo Nascimento",
-      role: "ESP. COLUNA",
-      imageUrl: "/images/leonardo-nascimento.webp",
-      icon: "accessibility_new",
-      colorClass: "bg-secondary"
-    }
-  },
-  {
-    number: "06",
-    date: "09/02",
-    weekday: "Segunda-feira",
-    time: "20:00H",
-    title: "DISFUNÇÃO OCULOMOTORA",
-    topics: ["Caso clínico"],
-    expert: {
-      name: "Dra. Thaynara Nascimento",
-      role: "REAB. VISUAL",
-      imageUrl: "/images/thaynara-nascimento.webp",
-      icon: "visibility",
-      colorClass: "bg-accent"
-    }
-  },
-  {
-    number: "07",
-    date: "10/02",
-    weekday: "Terça-feira",
-    time: "20:00H",
-    title: "SOLUCIONE UM CASO CLÍNICO NA PRÁTICA COM INTELIGÊNCIA ARTIFICIAL",
-    isExclusive: true,
-    topics: ["Resolva um caso clínico ao vivo comigo", "Tecnologia aplicada à prática clínica", "Presente especial"],
-    expert: {
-      name: "Dr. Samuel Lodovichi",
-      role: "INOVAÇÃO CLÍNICA",
-      imageUrl: "/images/samuel-lodovichi.webp",
-      icon: "smart_toy",
       colorClass: "bg-primary"
     }
   }

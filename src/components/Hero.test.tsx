@@ -9,26 +9,23 @@ const renderWithRouter = (ui: React.ReactElement) =>
 describe('Hero', () => {
   it('renders the main heading', () => {
     renderWithRouter(<Hero />);
-    expect(screen.getByText(/MARATONA FISIOTERAPIA EM/)).toBeInTheDocument();
+    expect(screen.getByText(/PENSAR A FISIOTERAPIA EM/)).toBeInTheDocument();
   });
 
-  it('renders all 6 expert images', () => {
+  it('renders all 3 expert images', () => {
     renderWithRouter(<Hero />);
+    expect(screen.getByAltText('Marianne Trajano')).toBeInTheDocument();
     expect(screen.getByAltText('Rafael Tardin')).toBeInTheDocument();
-    expect(screen.getByAltText('Gustavo Pacheco')).toBeInTheDocument();
-    expect(screen.getByAltText('Bruna Cabugueira')).toBeInTheDocument();
     expect(screen.getByAltText('Samuel Lodovichi')).toBeInTheDocument();
-    expect(screen.getByAltText('Leonardo Nascimento')).toBeInTheDocument();
-    expect(screen.getByAltText('Thaynara Nascimento')).toBeInTheDocument();
   });
 
   it('renders CTA button', () => {
     renderWithRouter(<Hero />);
-    expect(screen.getByText('QUERO PARTICIPAR GRATUITAMENTE')).toBeInTheDocument();
+    expect(screen.getByText('CONHECER O PORTAL CRANIUM')).toBeInTheDocument();
   });
 
-  it('renders social proof text', () => {
+  it('renders parametrized schedule notice', () => {
     renderWithRouter(<Hero />);
-    expect(screen.getByText(/\+2\.000 profissionais/)).toBeInTheDocument();
+    expect(screen.getAllByText(/em confirmação/).length).toBeGreaterThan(0);
   });
 });

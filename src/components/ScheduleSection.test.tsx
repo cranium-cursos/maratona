@@ -5,23 +5,21 @@ import ScheduleSection, { getDayStatus } from './ScheduleSection';
 describe('ScheduleSection', () => {
   it('renders the section heading', () => {
     render(<ScheduleSection />);
-    expect(screen.getByText('Cronograma da Maratona')).toBeInTheDocument();
+    expect(screen.getByText('Programação da Maratona')).toBeInTheDocument();
   });
 
-  it('renders all 7 schedule days', () => {
+  it('renders all 4 schedule days', () => {
     render(<ScheduleSection />);
-    expect(screen.getByText('DTM')).toBeInTheDocument();
-    expect(screen.getByText('SISTEMA VESTIBULAR')).toBeInTheDocument();
-    expect(screen.getByText('ZUMBIDO')).toBeInTheDocument();
-    expect(screen.getByText('CEFALEIA')).toBeInTheDocument();
-    expect(screen.getByText('CERVICAL')).toBeInTheDocument();
-    expect(screen.getByText('DISFUNÇÃO OCULOMOTORA')).toBeInTheDocument();
-    expect(screen.getByText(/INTELIGÊNCIA ARTIFICIAL/)).toBeInTheDocument();
+    expect(screen.getAllByText("SISTEMA VESTIBULAR").length).toBeGreaterThan(0);
+    expect(screen.getAllByText("DTM").length).toBeGreaterThan(0);
+    expect(screen.getAllByText('[EIXO EM CONFIRMAÇÃO]').length).toBe(2);
   });
 
-  it('renders the exclusive badge for day 7', () => {
+  it('renders confirmed guest names', () => {
     render(<ScheduleSection />);
-    expect(screen.getByText('Exclusivo')).toBeInTheDocument();
+    expect(screen.getByText('Marianne Trajano')).toBeInTheDocument();
+    expect(screen.getByText('Rafael Tardin')).toBeInTheDocument();
+    expect(screen.getByText('Samuel Lodovichi')).toBeInTheDocument();
   });
 });
 
@@ -35,17 +33,17 @@ describe('getDayStatus', () => {
   });
 
   it('returns "past" for a date before today', () => {
-    vi.setSystemTime(new Date(2026, 1, 8)); // 08/02/2026
-    expect(getDayStatus('02/02')).toBe('past');
+    vi.setSystemTime(new Date(2026, 9, 8)); // 08/10/2026
+    expect(getDayStatus('05/10')).toBe('past');
   });
 
   it('returns "today" for today\'s date', () => {
-    vi.setSystemTime(new Date(2026, 1, 8));
-    expect(getDayStatus('08/02')).toBe('today');
+    vi.setSystemTime(new Date(2026, 9, 8));
+    expect(getDayStatus('08/10')).toBe('today');
   });
 
   it('returns "future" for a date after today', () => {
-    vi.setSystemTime(new Date(2026, 1, 8));
-    expect(getDayStatus('10/02')).toBe('future');
+    vi.setSystemTime(new Date(2026, 9, 1));
+    expect(getDayStatus('08/10')).toBe('future');
   });
 });

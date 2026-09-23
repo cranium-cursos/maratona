@@ -14,6 +14,6 @@ describe('Header', () => {
 
   it('renders the CTA button', () => {
     renderWithRouter(<Header />);
-    expect(screen.getByText('QUERO ME INSCREVER')).toBeInTheDocument();
+    expect(screen.getByText('CONHECER O PORTAL')).toBeInTheDocument();
   });
 });

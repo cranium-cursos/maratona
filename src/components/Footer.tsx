@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import { MessageCircle, Globe, Camera } from 'lucide-react';
+import { ArrowRight, Globe, Camera } from 'lucide-react';
 import Button from './ui/Button';
 
 const Footer: React.FC = () => {
@@ -10,16 +10,16 @@ const Footer: React.FC = () => {
             <div className="max-w-4xl mx-auto px-6 text-center">
                 <div id="register" className="mb-12">
                     <h3 className="text-lg md:text-2xl font-bold text-secondary dark:text-white mb-8 leading-relaxed px-2">
-                        Toque no botão, entre no grupo de whatsapp para participar e ter acesso ao material complementar gratuitamente:
+                        Comece pela discussão. Continue pelo estudo no Portal Cranium:
                     </h3>
                     <Button
                         onClick={() => navigate('/proximos-passos')}
                         size="lg"
                         fullWidth
-                        icon={<MessageCircle className="w-5 h-5" />}
+                        icon={<ArrowRight className="w-5 h-5" />}
                         className="rounded-full md:w-auto hover:scale-105"
                     >
-                        ENTRAR NO GRUPO VIP
+                        CONHECER O PORTAL CRANIUM
                     </Button>
                 </div>
 
