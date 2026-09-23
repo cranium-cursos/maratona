@@ -19,8 +19,7 @@ const AboutSection: React.FC = () => {
                     <div className="text-slate-300 text-base md:text-lg leading-relaxed font-light space-y-4">
                         <p>Samuel Lodovichi é fisioterapeuta há mais de uma década.</p>
                         <p>Com Mestrado na área de cabeça e pescoço pela USP, e professor universitário, hoje é membro da Sociedade Brasileira de Cefaleias.</p>
-                        <p>Depois de atender por anos pacientes com dores cervicais e cefaleias, fundou a Cranium Cursos, a maior escola de cabeça e pescoço do Brasil.</p>
-                        <p>Na Maratona, vai trazer as maiores referências da área para te proporcionar uma verdadeira imersão na prática clínica.</p>
+                        <p>Fundador da Cranium Cursos, reúne na Maratona diferentes recortes da fisioterapia em cabeça e pescoço para discutir casos reais de clínico para clínico.</p>
                     </div>
                 </div>
                 <div className="order-1 lg:order-2 relative">

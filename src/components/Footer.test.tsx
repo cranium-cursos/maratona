@@ -9,7 +9,7 @@ const renderWithRouter = (ui: React.ReactElement) =>
 describe('Footer', () => {
   it('renders the CTA button', () => {
     renderWithRouter(<Footer />);
-    expect(screen.getByText('ENTRAR NO GRUPO VIP')).toBeInTheDocument();
+    expect(screen.getByText('CONHECER O PORTAL CRANIUM')).toBeInTheDocument();
   });
 
   it('renders copyright with 2026', () => {

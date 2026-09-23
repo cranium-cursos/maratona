@@ -5,14 +5,14 @@ import FeatureSection from './FeatureSection';
 describe('FeatureSection', () => {
   it('renders the section heading', () => {
     render(<FeatureSection />);
-    expect(screen.getByText(/Em apenas 7 dias/)).toBeInTheDocument();
+    expect(screen.getByText(/Em quatro dias/)).toBeInTheDocument();
   });
 
   it('renders all 4 feature cards', () => {
     render(<FeatureSection />);
-    expect(screen.getByText('Como manejar as principais patologias')).toBeInTheDocument();
-    expect(screen.getByText('Abordagem prática')).toBeInTheDocument();
-    expect(screen.getByText('Desenvolver o raciocínio clínico')).toBeInTheDocument();
-    expect(screen.getByText('Com casos clínicos reais')).toBeInTheDocument();
+    expect(screen.getByText('Raciocínio clínico a partir de casos reais')).toBeInTheDocument();
+    expect(screen.getByText('Diferentes recortes da mesma região')).toBeInTheDocument();
+    expect(screen.getByText('Prática, não teoria isolada')).toBeInTheDocument();
+    expect(screen.getByText('Continuidade no Portal Cranium')).toBeInTheDocument();
   });
 });

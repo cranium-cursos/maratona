@@ -16,7 +16,7 @@ const Hero: React.FC = () => {
                 <div className="mb-10 relative group w-full max-w-4xl">
                     <div className="absolute -inset-1 bg-gradient-to-r from-primary via-accent to-secondary rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
                     <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/50 bg-slate-100 dark:bg-slate-900 aspect-[16/9] md:aspect-[21/9]">
-                        <div className="absolute inset-0 grid grid-cols-6 h-full">
+                        <div className="absolute inset-0 grid grid-cols-3 h-full">
                             {EXPERTS.map((expert, i) => (
                                 <div key={i} className="h-full relative overflow-hidden group/item">
                                     <img
@@ -33,7 +33,7 @@ const Hero: React.FC = () => {
                         <div className="absolute bottom-0 left-0 right-0 h-16 md:h-20 bg-gradient-to-t from-secondary/90 to-transparent flex items-end justify-center pb-4 pointer-events-none">
                             <p className="text-white/90 text-xs md:text-sm font-medium tracking-wider uppercase flex items-center gap-2">
                                 <BadgeCheck className="text-primary w-4 h-4 md:w-5 md:h-5" />
-                                Mentores Especialistas Cranium
+                                Convidados Maratona Cranium
                             </p>
                         </div>
                     </div>
@@ -42,25 +42,20 @@ const Hero: React.FC = () => {
                 <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-slate-100/80 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700 backdrop-blur-sm mb-6">
                     <Calendar className="text-primary w-3.5 h-3.5" />
                     <span className="text-xs font-bold tracking-widest text-secondary dark:text-white uppercase">
-                        ONLINE E GRATUITO | DIAS 02/02 A 10/02
+                        05 A 08 DE OUTUBRO · PROGRAMAÇÃO ONLINE [formato em confirmação]
                     </span>
                 </div>
 
                 <h1 className="font-display text-3xl md:text-5xl lg:text-6xl font-black text-secondary dark:text-white leading-tight mb-6">
-                    MARATONA FISIOTERAPIA EM <br className="hidden md:block" />
+                    QUATRO DIAS PARA PENSAR A FISIOTERAPIA EM <br className="hidden md:block" />
                     <span className="bg-clip-text text-transparent bg-gradient-to-r from-secondary via-primary to-accent">
                         CABEÇA E PESCOÇO
                     </span>
                 </h1>
 
                 <p className="text-base md:text-xl text-slate-600 dark:text-slate-300 max-w-3xl leading-relaxed mb-10 px-2">
-                    Aprenda como os especialistas tratam seus pacientes de cabeça e pescoço — baseado em casos clínicos reais.
-                    7 dias discutindo sobre <strong className="text-secondary dark:text-primary font-bold">DTM</strong>,
-                    <strong className="text-secondary dark:text-primary font-bold"> sistema vestibular</strong>,
-                    <strong className="text-secondary dark:text-primary font-bold"> zumbido</strong>,
-                    <strong className="text-secondary dark:text-primary font-bold"> cefaleia</strong>,
-                    <strong className="text-secondary dark:text-primary font-bold"> cervical</strong> e
-                    <strong className="text-secondary dark:text-primary font-bold"> disfunção oculomotora</strong>.
+                    Na Maratona, cada encontro abre um eixo de discussão a partir de casos clínicos reais — conectando raciocínio clínico, prática e estudo continuado.
+                    <strong className="text-secondary dark:text-primary font-bold"> De clínico para clínico.</strong>
                 </p>
 
                 <Button
@@ -70,11 +65,11 @@ const Hero: React.FC = () => {
                     icon={<ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />}
                     className="group cursor-pointer font-display md:w-auto focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary overflow-hidden flex-row-reverse"
                 >
-                    QUERO PARTICIPAR GRATUITAMENTE
+                    CONHECER O PORTAL CRANIUM
                 </Button>
 
                 <div className="mt-8 flex items-center justify-center opacity-80">
-                    <p className="text-xs md:text-sm font-medium text-slate-500 dark:text-slate-400">Junte-se a +2.000 profissionais</p>
+                    <p className="text-xs md:text-sm font-medium text-slate-500 dark:text-slate-400">[Horários e formato de transmissão em confirmação]</p>
                 </div>
             </div>
         </section>

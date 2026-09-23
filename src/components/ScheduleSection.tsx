@@ -1,5 +1,5 @@
 import React from 'react';
-import { Sparkles, CheckCircle } from 'lucide-react';
+import { CheckCircle } from 'lucide-react';
 import { SCHEDULE } from '../data/constants';
 import Card from './ui/Card';
 import Badge from './ui/Badge';
@@ -19,8 +19,8 @@ const ScheduleSection: React.FC = () => (
     <section id="schedule" className="py-20 relative overflow-hidden bg-white dark:bg-background-dark" aria-labelledby="schedule-heading">
         <div className="max-w-5xl mx-auto px-6 relative z-10">
             <SectionHeading
-                title="Cronograma da Maratona"
-                subtitle="Durante 7 dias vamos abrir as portas do nosso consultório e revelar como atendemos nossos pacientes:"
+                title="Programação da Maratona"
+                subtitle="Os encontros e suas informações operacionais serão atualizados conforme as confirmações finais."
             />
 
             <div className="space-y-4 md:space-y-6">
@@ -32,20 +32,20 @@ const ScheduleSection: React.FC = () => (
                     return (
                         <Card
                             key={i}
-                            variant={day.isExclusive ? 'exclusive' : 'default'}
-                            className={`relative flex flex-col md:flex-row gap-4 md:gap-6 p-4 md:p-6 ${isPast && !day.isExclusive ? 'opacity-60' : ''} ${isToday ? 'ring-2 ring-primary' : ''}`}
+                            variant="default"
+                            className={`relative flex flex-col md:flex-row gap-4 md:gap-6 p-4 md:p-6 ${isPast ? 'opacity-60' : ''} ${isToday ? 'ring-2 ring-primary' : ''}`}
                         >
-                            <div className={`md:w-32 flex flex-col justify-center items-center md:items-start md:border-r pr-6 ${day.isExclusive ? 'border-slate-700' : 'border-slate-100 dark:border-slate-700'}`}>
-                                <div className={`text-3xl font-black transition-colors ${day.isExclusive ? 'text-slate-700 group-hover:text-white' : 'text-slate-200 dark:text-slate-700 group-hover:text-primary'}`}>
+                            <div className="md:w-32 flex flex-col justify-center items-center md:items-start md:border-r pr-6 border-slate-100 dark:border-slate-700">
+                                <div className="text-3xl font-black transition-colors text-slate-200 dark:text-slate-700 group-hover:text-primary">
                                     {day.number}
                                 </div>
                                 <div className="text-primary font-bold text-lg leading-tight">
                                     {day.date}
-                                    <span className={`block text-xs font-normal mt-0.5 ${day.isExclusive ? 'text-slate-400' : 'text-slate-500 dark:text-slate-400'}`}>
+                                    <span className="block text-xs font-normal mt-0.5 text-slate-500 dark:text-slate-400">
                                         ({day.weekday})
                                     </span>
                                 </div>
-                                <div className={`text-xs font-medium uppercase tracking-wide mt-1 ${day.isExclusive ? 'text-slate-400' : 'text-slate-400'}`}>
+                                <div className="text-xs font-medium uppercase tracking-wide mt-1 text-slate-400">
                                     {day.time}
                                 </div>
                                 {isPast && (
@@ -60,16 +60,10 @@ const ScheduleSection: React.FC = () => (
                             </div>
 
                             <div className="flex-1 flex flex-col justify-center py-2">
-                                {day.isExclusive && (
-                                    <div className="inline-flex items-center gap-2 mb-2">
-                                        <Badge className="bg-primary/20 text-primary border-primary/20">Exclusivo</Badge>
-                                        <Sparkles className="text-primary w-4 h-4 animate-pulse" aria-hidden="true" />
-                                    </div>
-                                )}
-                                <h3 className={`text-xl md:text-2xl font-bold mb-3 transition-colors ${day.isExclusive ? 'text-white' : 'text-secondary dark:text-white group-hover:text-primary'}`}>
+                                <h3 className="text-xl md:text-2xl font-bold mb-3 transition-colors text-secondary dark:text-white group-hover:text-primary">
                                     {day.title}
                                 </h3>
-                                <ul className={`text-sm space-y-2 mb-0 ${day.isExclusive ? 'text-slate-400' : 'text-slate-600 dark:text-slate-400'}`}>
+                                <ul className="text-sm space-y-2 mb-0 text-slate-600 dark:text-slate-400">
                                     {day.topics.map((topic, idx) => (
                                         <li key={idx} className="flex items-start gap-2">
                                             {topic}
@@ -78,20 +72,20 @@ const ScheduleSection: React.FC = () => (
                                 </ul>
                             </div>
 
-                            <div className={`md:w-64 flex items-center gap-4 p-3 rounded-xl border ${day.isExclusive
-                                ? 'bg-slate-800/50 border-slate-600'
-                                : 'bg-slate-50 dark:bg-slate-900/50 border-slate-100 dark:border-slate-700'
-                                }`}>
+                            <div className="md:w-64 flex items-center gap-4 p-3 rounded-xl border bg-slate-50 dark:bg-slate-900/50 border-slate-100 dark:border-slate-700">
                                 <div className="relative flex-shrink-0">
                                     <img
                                         alt={day.expert.name}
-                                        className={`w-16 h-16 md:w-20 md:h-20 rounded-full object-cover ring-2 ${day.isExclusive ? 'ring-primary' : 'ring-white dark:ring-slate-700'}`}
+                                        className="w-16 h-16 md:w-20 md:h-20 rounded-full object-cover ring-2 ring-white dark:ring-slate-700"
                                         src={day.expert.imageUrl}
                                     />
                                 </div>
                                 <div>
-                                    <p className={`font-bold text-sm md:text-base ${day.isExclusive ? 'text-white' : 'text-secondary dark:text-white'}`}>
+                                    <p className="font-bold text-sm md:text-base text-secondary dark:text-white">
                                         {day.expert.name}
+                                    </p>
+                                    <p className="text-xs text-slate-500 dark:text-slate-400">
+                                        {day.expert.role}
                                     </p>
                                 </div>
                             </div>
@@ -99,6 +93,10 @@ const ScheduleSection: React.FC = () => (
                     );
                 })}
             </div>
+
+            <p className="text-center text-xs text-slate-400 mt-8">
+                Programação sujeita à confirmação dos dados de cada encontro.
+            </p>
         </div>
     </section>
 );

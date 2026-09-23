@@ -12,7 +12,7 @@ const MobileCTA: React.FC = () => {
                 fullWidth
                 className="text-sm"
             >
-                INSCREVER-SE GRATUITAMENTE
+                CONHECER O PORTAL CRANIUM
             </Button>
         </div>
     );
