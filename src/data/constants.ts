@@ -34,14 +34,19 @@ export const EXPERTS: Expert[] = [
     imageUrl: "/images/marianne-trajano.jpg"
   },
   {
+    name: "Samuel Lodovichi",
+    shortName: "Samuel",
+    imageUrl: "/images/samuel-lodovichi-2026.jpg"
+  },
+  {
     name: "Rafael Tardin",
     shortName: "Rafael",
     imageUrl: "/images/rafael-tardin-2026.jpg"
   },
   {
-    name: "Samuel Lodovichi",
-    shortName: "Samuel",
-    imageUrl: "/images/samuel-lodovichi-2026.jpg"
+    name: "Érika Galiza",
+    shortName: "Érika",
+    imageUrl: "/images/erika-galiza.jpg"
   }
 ];
 
@@ -66,14 +71,14 @@ export const SCHEDULE: ScheduleDay[] = [
     date: "06/10",
     weekday: "Terça-feira",
     time: "[horário em confirmação]",
-    title: "[ÁREA EM CONFIRMAÇÃO]",
-    topics: ["Convidado(a) e recorte em confirmação"],
+    title: "CEFALEIA",
+    topics: ["Caso clínico — recorte em confirmação"],
     expert: {
-      name: "[convidado(a) em confirmação]",
-      role: "PAUTA EM CONFIRMAÇÃO",
-      imageUrl: "/images/portal-cranium-logo.webp",
-      icon: "help_outline",
-      colorClass: "bg-secondary"
+      name: "Samuel Lodovichi",
+      role: "CEFALEIA",
+      imageUrl: "/images/samuel-lodovichi-2026.jpg",
+      icon: "medical_services",
+      colorClass: "bg-primary"
     }
   },
   {
@@ -96,14 +101,14 @@ export const SCHEDULE: ScheduleDay[] = [
     date: "08/10",
     weekday: "Quinta-feira",
     time: "[horário em confirmação]",
-    title: "[ÁREA EM CONFIRMAÇÃO]",
-    topics: ["Recorte em confirmação"],
+    title: "ZUMBIDO",
+    topics: ["Caso clínico — recorte em confirmação"],
     expert: {
-      name: "Samuel Lodovichi",
-      role: "PAUTA EM CONFIRMAÇÃO",
-      imageUrl: "/images/samuel-lodovichi-2026.jpg",
-      icon: "medical_services",
-      colorClass: "bg-primary"
+      name: "Érika Galiza",
+      role: "ZUMBIDO",
+      imageUrl: "/images/erika-galiza.jpg",
+      icon: "graphic_eq",
+      colorClass: "bg-accent"
     }
   }
 ];

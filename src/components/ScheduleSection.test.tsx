@@ -11,15 +11,17 @@ describe('ScheduleSection', () => {
   it('renders all 4 schedule days', () => {
     render(<ScheduleSection />);
     expect(screen.getAllByText("SISTEMA VESTIBULAR").length).toBeGreaterThan(0);
+    expect(screen.getAllByText("CEFALEIA").length).toBeGreaterThan(0);
     expect(screen.getAllByText("DTM").length).toBeGreaterThan(0);
-    expect(screen.getAllByText('[ÁREA EM CONFIRMAÇÃO]').length).toBe(2);
+    expect(screen.getAllByText("ZUMBIDO").length).toBeGreaterThan(0);
   });
 
   it('renders confirmed guest names', () => {
     render(<ScheduleSection />);
     expect(screen.getByText('Marianne Trajano')).toBeInTheDocument();
-    expect(screen.getByText('Rafael Tardin')).toBeInTheDocument();
     expect(screen.getByText('Samuel Lodovichi')).toBeInTheDocument();
+    expect(screen.getByText('Rafael Tardin')).toBeInTheDocument();
+    expect(screen.getByText('Érika Galiza')).toBeInTheDocument();
   });
 });
 

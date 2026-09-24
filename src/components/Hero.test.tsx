@@ -9,14 +9,15 @@ const renderWithRouter = (ui: React.ReactElement) =>
 describe('Hero', () => {
   it('renders the main heading', () => {
     renderWithRouter(<Hero />);
-    expect(screen.getByText(/DISCUTIR CASOS REAIS EM/)).toBeInTheDocument();
+    expect(screen.getByText(/PENSAM CASOS REAIS/)).toBeInTheDocument();
   });
 
-  it('renders all 3 expert images', () => {
+  it('renders all 4 expert images', () => {
     renderWithRouter(<Hero />);
     expect(screen.getByAltText('Marianne Trajano')).toBeInTheDocument();
-    expect(screen.getByAltText('Rafael Tardin')).toBeInTheDocument();
     expect(screen.getByAltText('Samuel Lodovichi')).toBeInTheDocument();
+    expect(screen.getByAltText('Rafael Tardin')).toBeInTheDocument();
+    expect(screen.getByAltText('Érika Galiza')).toBeInTheDocument();
   });
 
   it('renders CTA button', () => {

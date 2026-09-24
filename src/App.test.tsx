@@ -6,7 +6,7 @@ describe('App', () => {
   it('renders without crashing', async () => {
     render(<App />);
     await waitFor(() => {
-      expect(screen.getByText(/DISCUTIR CASOS REAIS EM/)).toBeInTheDocument();
+      expect(screen.getByText(/PENSAM CASOS REAIS/)).toBeInTheDocument();
     });
   });
 

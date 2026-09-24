@@ -24,7 +24,7 @@ const Hero: React.FC = () => {
                 <div className="mb-10 relative group w-full max-w-4xl">
                     <div className="absolute -inset-1 bg-gradient-to-r from-primary via-accent to-secondary rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000"></div>
                     <div className="relative rounded-2xl overflow-hidden shadow-2xl border border-white/50 bg-slate-100 dark:bg-slate-900 aspect-[16/9] md:aspect-[21/9]">
-                        <div className="absolute inset-0 grid grid-cols-3 h-full">
+                        <div className="absolute inset-0 grid grid-cols-4 h-full">
                             {EXPERTS.map((expert, i) => (
                                 <div key={i} className="h-full relative overflow-hidden group/item">
                                     <img
@@ -55,8 +55,8 @@ const Hero: React.FC = () => {
                 </div>
 
                 <h1 className="font-display text-3xl md:text-5xl lg:text-6xl font-black text-secondary dark:text-white leading-tight mb-6">
-                    QUATRO NOITES PARA DISCUTIR CASOS REAIS EM <br className="hidden md:block" />
-                    FISIOTERAPIA EM CABEÇA E PESCOÇO
+                    DESCUBRA COMO 4 ESPECIALISTAS PENSAM <br className="hidden md:block" />
+                    CASOS REAIS DE CABEÇA E PESCOÇO — 4 ÁREAS, 4 NOITES
                 </h1>
 
                 <p className="text-base md:text-xl text-slate-600 dark:text-slate-300 max-w-3xl leading-relaxed mb-10 px-2">
