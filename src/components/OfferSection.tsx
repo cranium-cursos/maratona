@@ -41,9 +41,9 @@ const OfferSection: React.FC = () => {
                         <div className="w-12 h-12 rounded-lg bg-primary/30 flex items-center justify-center mb-4">
                             <Award className="w-6 h-6 text-primary" aria-hidden="true" />
                         </div>
-                        <h3 className="font-bold text-lg mb-2">VIP — R$ 19,90</h3>
+                        <h3 className="font-bold text-lg mb-2">VIP — R$ 10</h3>
                         <p className="text-slate-200 text-sm leading-relaxed mb-6 flex-1">
-                            Tudo do Free + gravações de todos os encontros por 90 dias + certificado de participação de 5 horas, emitido automaticamente após a Maratona.
+                            Tudo do Free + gravações de todos os encontros por 30 dias + certificado de participação de 5 horas, emitido automaticamente após a Maratona.
                         </p>
                         <Button
                             onClick={() => navigate('/proximos-passos?tier=vip')}

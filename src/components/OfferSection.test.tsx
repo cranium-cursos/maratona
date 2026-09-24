@@ -19,7 +19,7 @@ describe('OfferSection', () => {
 
   it('renders the VIP price and CTA', () => {
     renderWithRouter(<OfferSection />);
-    expect(screen.getByText('VIP — R$ 19,90')).toBeInTheDocument();
+    expect(screen.getByText('VIP — R$ 10')).toBeInTheDocument();
     expect(screen.getByText('GARANTIR INGRESSO VIP')).toBeInTheDocument();
   });
 
