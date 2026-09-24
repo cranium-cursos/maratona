@@ -35,18 +35,17 @@ const ScheduleSection: React.FC = () => (
                             variant="default"
                             className={`relative flex flex-col md:flex-row gap-4 md:gap-6 p-4 md:p-6 ${isPast ? 'opacity-60' : ''} ${isToday ? 'ring-2 ring-primary' : ''}`}
                         >
-                            <div className="md:w-32 flex flex-col justify-center items-center md:items-start md:border-r pr-6 border-slate-100 dark:border-slate-700">
-                                <div className="text-3xl font-black transition-colors text-slate-200 dark:text-slate-700 group-hover:text-primary">
-                                    {day.number}
+                            <div className="md:w-40 flex flex-col justify-center items-center md:items-start md:border-r pr-6 border-slate-100 dark:border-slate-700">
+                                <div className="flex items-baseline gap-2">
+                                    <div className="text-3xl font-black transition-colors text-slate-200 dark:text-slate-700 group-hover:text-primary">
+                                        {day.number}
+                                    </div>
+                                    <div className="text-primary font-bold text-lg leading-tight">
+                                        {day.date}
+                                    </div>
                                 </div>
-                                <div className="text-primary font-bold text-lg leading-tight">
-                                    {day.date}
-                                    <span className="block text-xs font-normal mt-0.5 text-slate-500 dark:text-slate-400">
-                                        ({day.weekday})
-                                    </span>
-                                </div>
-                                <div className="text-xs font-medium uppercase tracking-wide mt-1 text-slate-400">
-                                    {day.time}
+                                <div className="text-xs font-medium text-slate-500 dark:text-slate-400 whitespace-nowrap">
+                                    {day.weekday} · {day.time}
                                 </div>
                                 {isPast && (
                                     <div className="flex items-center gap-1 mt-2">
