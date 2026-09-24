@@ -10,7 +10,7 @@ export const FEATURES: FeatureCard[] = [
   {
     icon: "medical_services",
     title: "Diferentes recortes da mesma região",
-    description: "Quatro eixos clínicos distintos discutidos por quem aplica na clínica todos os dias.",
+    description: "Quatro áreas clínicas distintas discutidas por quem aplica na clínica todos os dias.",
     colorClass: "bg-accent/10 text-accent"
   },
   {
@@ -66,7 +66,7 @@ export const SCHEDULE: ScheduleDay[] = [
     date: "06/10",
     weekday: "Terça-feira",
     time: "[horário em confirmação]",
-    title: "[EIXO EM CONFIRMAÇÃO]",
+    title: "[ÁREA EM CONFIRMAÇÃO]",
     topics: ["Convidado(a) e recorte em confirmação"],
     expert: {
       name: "[convidado(a) em confirmação]",
@@ -96,7 +96,7 @@ export const SCHEDULE: ScheduleDay[] = [
     date: "08/10",
     weekday: "Quinta-feira",
     time: "[horário em confirmação]",
-    title: "[EIXO EM CONFIRMAÇÃO]",
+    title: "[ÁREA EM CONFIRMAÇÃO]",
     topics: ["Recorte em confirmação"],
     expert: {
       name: "Samuel Lodovichi",

@@ -12,7 +12,7 @@ describe('ScheduleSection', () => {
     render(<ScheduleSection />);
     expect(screen.getAllByText("SISTEMA VESTIBULAR").length).toBeGreaterThan(0);
     expect(screen.getAllByText("DTM").length).toBeGreaterThan(0);
-    expect(screen.getAllByText('[EIXO EM CONFIRMAÇÃO]').length).toBe(2);
+    expect(screen.getAllByText('[ÁREA EM CONFIRMAÇÃO]').length).toBe(2);
   });
 
   it('renders confirmed guest names', () => {
