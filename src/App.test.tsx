@@ -6,14 +6,14 @@ describe('App', () => {
   it('renders without crashing', async () => {
     render(<App />);
     await waitFor(() => {
-      expect(screen.getByText(/DISCUSSÃO DE CASOS REAIS EM/)).toBeInTheDocument();
+      expect(screen.getByText(/DISCUTIR CASOS REAIS EM/)).toBeInTheDocument();
     });
   });
 
   it('renders the landing page by default', async () => {
     render(<App />);
     await waitFor(() => {
-      expect(screen.getAllByText(/GARANTIR VAGA/).length).toBeGreaterThan(0);
+      expect(screen.getAllByText(/VER FORMAS DE PARTICIPAR/).length).toBeGreaterThan(0);
     });
   });
 });

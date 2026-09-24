@@ -14,7 +14,7 @@ const ICON_MAP: Record<string, LucideIcon> = {
 const FeatureSection: React.FC = () => (
     <section id="features" className="py-16 md:py-20 bg-slate-50 dark:bg-slate-900/50 border-y border-slate-200 dark:border-slate-800" aria-labelledby="features-heading">
         <div className="max-w-7xl mx-auto px-6">
-            <SectionHeading title="Em quatro dias você vai discutir:" />
+            <SectionHeading title="Em quatro dias, a Maratona coloca em discussão:" />
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
                 {FEATURES.map((feature, i) => {
                     const Icon = ICON_MAP[feature.icon] || Stethoscope;
