@@ -35,7 +35,7 @@ const OfferSection: React.FC = () => {
                 </p>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-7 mb-8 items-stretch">
-                    {/* FREE — rota de entrada neutra */}
+                    {/* FREE: rota de entrada neutra */}
                     <div className="bg-white/[0.04] border border-white/15 rounded-2xl p-6 md:p-8 flex flex-col">
                         <div className="w-11 h-11 rounded-lg bg-white/10 flex items-center justify-center mb-5">
                             <PlayCircle className="w-5 h-5 text-white/80" aria-hidden="true" />
@@ -60,7 +60,7 @@ const OfferSection: React.FC = () => {
                         </Button>
                     </div>
 
-                    {/* VIP — escolha recomendada */}
+                    {/* VIP: escolha recomendada */}
                     <div className="bg-primary/[0.08] border-2 border-primary rounded-2xl p-6 md:p-8 pt-9 flex flex-col relative shadow-[0_8px_40px_-8px_rgba(16,193,180,0.35)]">
                         <span className="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-primary text-secondary text-xs font-bold px-4 py-1.5 rounded-full uppercase tracking-wide whitespace-nowrap">
                             Recomendado · Ingresso VIP
