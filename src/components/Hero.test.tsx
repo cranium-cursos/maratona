@@ -9,7 +9,7 @@ const renderWithRouter = (ui: React.ReactElement) =>
 describe('Hero', () => {
   it('renders the main heading', () => {
     renderWithRouter(<Hero />);
-    expect(screen.getByText(/PENSAR A FISIOTERAPIA EM/)).toBeInTheDocument();
+    expect(screen.getByText(/DISCUSSÃO DE CASOS REAIS EM/)).toBeInTheDocument();
   });
 
   it('renders all 3 expert images', () => {
@@ -21,7 +21,7 @@ describe('Hero', () => {
 
   it('renders CTA button', () => {
     renderWithRouter(<Hero />);
-    expect(screen.getByText('CONHECER O PORTAL CRANIUM')).toBeInTheDocument();
+    expect(screen.getByText('GARANTIR VAGA NA MARATONA')).toBeInTheDocument();
   });
 
   it('renders parametrized schedule notice', () => {

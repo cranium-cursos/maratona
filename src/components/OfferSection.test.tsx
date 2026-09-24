@@ -9,16 +9,22 @@ const renderWithRouter = (ui: React.ReactElement) =>
 describe('OfferSection', () => {
   it('renders the section heading', () => {
     renderWithRouter(<OfferSection />);
-    expect(screen.getByText('Condições da semana da Maratona')).toBeInTheDocument();
+    expect(screen.getByText('Escolha como participar da Maratona')).toBeInTheDocument();
   });
 
-  it('mentions the recording price', () => {
+  it('renders the free tier CTA', () => {
     renderWithRouter(<OfferSection />);
-    expect(screen.getByText('R$ 10')).toBeInTheDocument();
+    expect(screen.getByText('PARTICIPAR GRATUITAMENTE')).toBeInTheDocument();
   });
 
-  it('renders the CTA button', () => {
+  it('renders the VIP price and CTA', () => {
     renderWithRouter(<OfferSection />);
-    expect(screen.getByText('VER CONDIÇÕES DO PORTAL')).toBeInTheDocument();
+    expect(screen.getByText('VIP — R$ 19,90')).toBeInTheDocument();
+    expect(screen.getByText('GARANTIR INGRESSO VIP')).toBeInTheDocument();
+  });
+
+  it('does not mention the Portal as the primary offer', () => {
+    renderWithRouter(<OfferSection />);
+    expect(screen.queryByText(/CONHECER O PORTAL/)).not.toBeInTheDocument();
   });
 });

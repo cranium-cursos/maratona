@@ -1,11 +1,19 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import { BadgeCheck, Calendar, ArrowRight } from 'lucide-react';
+import { BadgeCheck, Calendar } from 'lucide-react';
 import { EXPERTS } from '../data/constants';
 import Button from './ui/Button';
 
+const scrollToOffer = () => {
+    const el = document.querySelector('#offer');
+    if (el) {
+        const offset = 80;
+        const top = el.getBoundingClientRect().top + window.scrollY - offset;
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        window.scrollTo({ top, behavior: prefersReducedMotion ? 'auto' : 'smooth' });
+    }
+};
+
 const Hero: React.FC = () => {
-    const navigate = useNavigate();
     return (
         <section className="relative py-12 md:py-20 lg:py-24 overflow-hidden">
             <div className="absolute inset-0 z-0 pointer-events-none">
@@ -47,25 +55,24 @@ const Hero: React.FC = () => {
                 </div>
 
                 <h1 className="font-display text-3xl md:text-5xl lg:text-6xl font-black text-secondary dark:text-white leading-tight mb-6">
-                    QUATRO DIAS PARA PENSAR A FISIOTERAPIA EM <br className="hidden md:block" />
+                    MARATONA DE DISCUSSÃO DE CASOS REAIS EM <br className="hidden md:block" />
                     <span className="bg-clip-text text-transparent bg-gradient-to-r from-secondary via-primary to-accent">
-                        CABEÇA E PESCOÇO
+                        FISIOTERAPIA EM CABEÇA E PESCOÇO
                     </span>
                 </h1>
 
                 <p className="text-base md:text-xl text-slate-600 dark:text-slate-300 max-w-3xl leading-relaxed mb-10 px-2">
-                    Na Maratona, cada encontro abre um eixo de discussão a partir de casos clínicos reais — conectando raciocínio clínico, prática e estudo continuado.
+                    Quatro dias, quatro casos clínicos reais discutidos ao vivo — conectando raciocínio clínico e prática.
                     <strong className="text-secondary dark:text-primary font-bold"> De clínico para clínico.</strong>
                 </p>
 
                 <Button
-                    onClick={() => navigate('/proximos-passos')}
+                    onClick={scrollToOffer}
                     size="lg"
                     fullWidth
-                    icon={<ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />}
-                    className="group cursor-pointer font-display md:w-auto focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary overflow-hidden flex-row-reverse"
+                    className="group cursor-pointer font-display md:w-auto focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary overflow-hidden"
                 >
-                    CONHECER O PORTAL CRANIUM
+                    GARANTIR VAGA NA MARATONA
                 </Button>
 
                 <div className="mt-8 flex items-center justify-center opacity-80">

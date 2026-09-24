@@ -1,25 +1,26 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import Button from './ui/Button';
 
 const NAV_LINKS = [
-  { label: 'Aprenda', href: '#features' },
-  { label: 'Cronograma', href: '#schedule' },
-  { label: 'Sobre', href: '#about' },
+    { label: 'Aprenda', href: '#features' },
+    { label: 'Cronograma', href: '#schedule' },
+    { label: 'Sobre', href: '#about' },
 ];
 
-const Header: React.FC = () => {
-    const navigate = useNavigate();
+const scrollTo = (href: string) => {
+    const el = document.querySelector(href);
+    if (el) {
+        const offset = 80;
+        const top = el.getBoundingClientRect().top + window.scrollY - offset;
+        const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        window.scrollTo({ top, behavior: prefersReducedMotion ? 'auto' : 'smooth' });
+    }
+};
 
+const Header: React.FC = () => {
     const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
         e.preventDefault();
-        const el = document.querySelector(href);
-        if (el) {
-            const offset = 80;
-            const top = el.getBoundingClientRect().top + window.scrollY - offset;
-            const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-            window.scrollTo({ top, behavior: prefersReducedMotion ? 'auto' : 'smooth' });
-        }
+        scrollTo(href);
     };
 
     return (
@@ -42,12 +43,12 @@ const Header: React.FC = () => {
                         </a>
                     ))}
                     <Button
-                        onClick={() => navigate('/proximos-passos')}
+                        onClick={() => scrollTo('#offer')}
                         size="sm"
                         className="rounded-full tracking-wide"
-                        aria-label="Inscrever-se na maratona"
+                        aria-label="Garantir vaga na Maratona"
                     >
-                        CONHECER O PORTAL
+                        GARANTIR VAGA
                     </Button>
                 </nav>
             </div>

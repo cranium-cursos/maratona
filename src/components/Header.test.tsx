@@ -14,6 +14,6 @@ describe('Header', () => {
 
   it('renders the CTA button', () => {
     renderWithRouter(<Header />);
-    expect(screen.getByText('CONHECER O PORTAL')).toBeInTheDocument();
+    expect(screen.getByText('GARANTIR VAGA')).toBeInTheDocument();
   });
 });
