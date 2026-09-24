@@ -21,8 +21,8 @@ export const FEATURES: FeatureCard[] = [
   },
   {
     icon: "assignment_turned_in",
-    title: "Continuidade no Portal Cranium",
-    description: "A discussão da Maratona é o início; o estudo continua no Portal Cranium.",
+    title: "Certificado de participação",
+    description: "Quem garante o Ingresso VIP recebe certificado de participação de 5 horas, emitido automaticamente após a Maratona.",
     colorClass: "bg-primary/10 text-primary"
   }
 ];

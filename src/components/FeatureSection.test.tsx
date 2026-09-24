@@ -13,6 +13,6 @@ describe('FeatureSection', () => {
     expect(screen.getByText('Raciocínio clínico a partir de casos reais')).toBeInTheDocument();
     expect(screen.getByText('Diferentes recortes da mesma região')).toBeInTheDocument();
     expect(screen.getByText('Prática, não teoria isolada')).toBeInTheDocument();
-    expect(screen.getByText('Continuidade no Portal Cranium')).toBeInTheDocument();
+    expect(screen.getByText('Certificado de participação')).toBeInTheDocument();
   });
 });
