@@ -76,7 +76,7 @@ const ScheduleSection: React.FC = () => (
                                 <div className="relative flex-shrink-0">
                                     <img
                                         alt={day.expert.name}
-                                        className="w-16 h-16 md:w-20 md:h-20 rounded-full object-cover ring-2 ring-white dark:ring-slate-700"
+                                        className="w-16 h-16 md:w-20 md:h-20 rounded-full object-cover object-top ring-2 ring-white dark:ring-slate-700"
                                         src={day.expert.imageUrl}
                                     />
                                 </div>
