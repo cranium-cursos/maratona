@@ -81,7 +81,7 @@ const OfferSection: React.FC = () => {
                             ))}
                         </ul>
                         <Button
-                            onClick={() => navigate('/proximos-passos?tier=vip')}
+                            onClick={() => { window.location.href = 'https://lp.craniumcursos.com.br/pay/maratonaout26-ingresso-vip'; }}
                             size="lg"
                             fullWidth
                             icon={<ArrowRight className="w-5 h-5" aria-hidden="true" />}
@@ -89,9 +89,6 @@ const OfferSection: React.FC = () => {
                         >
                             GARANTIR INGRESSO VIP
                         </Button>
-                        <p className="text-center text-xs text-slate-300/80 mt-4">
-                            Checkout e regras completas do Ingresso VIP em confirmação.
-                        </p>
                     </div>
                 </div>
             </div>
