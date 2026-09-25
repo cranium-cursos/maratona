@@ -6,7 +6,7 @@ const VIP_GROUP_URL = "https://chat.whatsapp.com/L68vzdfwfwU1ihALvq8yEw?mode=gi_
 
 const ThankYouVip: React.FC = () => {
     useEffect(() => {
-        trackEvent('Purchase', {
+        trackEvent('purchase', {
             content_name: 'Maratona Fisioterapia em Cabeça e Pescoço - Ingresso VIP',
             content_category: 'maratona_vip',
             currency: 'BRL',

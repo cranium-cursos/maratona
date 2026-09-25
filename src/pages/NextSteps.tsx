@@ -1,17 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { CheckCircle, MessageCircle } from 'lucide-react';
-import { trackEvent } from '../utils/analytics';
 
 const NextSteps: React.FC = () => {
     const [redirectSeconds, setRedirectSeconds] = useState(3);
     const whatsappLink = import.meta.env.VITE_WHATSAPP_GROUP_URL || "https://chat.whatsapp.com/K5jLQIfuS6QBxIZCiLGs3G?mode=gi_t";
-
-    useEffect(() => {
-        trackEvent('Lead', {
-            content_name: 'Maratona Fisioterapia em Cabeça e Pescoço',
-            content_category: 'maratona_free',
-        });
-    }, []);
 
     useEffect(() => {
         const interval = setInterval(() => {

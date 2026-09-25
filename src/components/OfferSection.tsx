@@ -83,7 +83,7 @@ const OfferSection: React.FC = () => {
                         </ul>
                         <Button
                             onClick={() => {
-                                trackEvent('InitiateCheckout', {
+                                trackEvent('begin_checkout', {
                                     content_name: 'Maratona Fisioterapia em Cabeça e Pescoço - Ingresso VIP',
                                     currency: 'BRL',
                                     value: 10,
