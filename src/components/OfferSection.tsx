@@ -2,6 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ArrowRight, PlayCircle, Award, Check } from 'lucide-react';
 import Button from './ui/Button';
+import { trackEvent } from '../utils/analytics';
 
 const FREE_BENEFITS = [
     'Participação ao vivo nos 4 dias',
@@ -81,7 +82,14 @@ const OfferSection: React.FC = () => {
                             ))}
                         </ul>
                         <Button
-                            onClick={() => { window.location.href = 'https://lp.craniumcursos.com.br/pay/maratonaout26-ingresso-vip'; }}
+                            onClick={() => {
+                                trackEvent('InitiateCheckout', {
+                                    content_name: 'Maratona Fisioterapia em Cabeça e Pescoço - Ingresso VIP',
+                                    currency: 'BRL',
+                                    value: 10,
+                                });
+                                window.location.href = 'https://lp.craniumcursos.com.br/pay/maratonaout26-ingresso-vip';
+                            }}
                             size="lg"
                             fullWidth
                             icon={<ArrowRight className="w-5 h-5" aria-hidden="true" />}

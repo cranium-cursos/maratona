@@ -1,9 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { CheckCircle, MessageCircle } from 'lucide-react';
+import { trackEvent } from '../utils/analytics';
 
 const VIP_GROUP_URL = "https://chat.whatsapp.com/L68vzdfwfwU1ihALvq8yEw?mode=gi_t";
 
 const ThankYouVip: React.FC = () => {
+    useEffect(() => {
+        trackEvent('Purchase', {
+            content_name: 'Maratona Fisioterapia em Cabeça e Pescoço - Ingresso VIP',
+            content_category: 'maratona_vip',
+            currency: 'BRL',
+            value: 10,
+        });
+    }, []);
+
     return (
         <div className="min-h-screen flex flex-col items-center justify-center bg-white dark:bg-background-dark text-slate-900 dark:text-slate-100 p-6 text-center">
             <div className="max-w-lg w-full bg-slate-50 dark:bg-slate-800/50 p-8 md:p-12 rounded-3xl border border-slate-100 dark:border-slate-700 shadow-2xl">
