@@ -17,9 +17,9 @@ const AboutSection: React.FC = () => {
                         <div className="h-1.5 w-16 bg-gradient-to-r from-primary to-accent rounded-full"></div>
                     </div>
                     <div className="text-slate-300 text-base md:text-lg leading-relaxed font-light space-y-4">
-                        <p>Samuel Lodovichi é fisioterapeuta há mais de uma década.</p>
-                        <p>Com Mestrado na área de cabeça e pescoço pela USP, e professor universitário, hoje é membro da Sociedade Brasileira de Cefaleias.</p>
-                        <p>Fundador da Cranium Cursos, reúne na Maratona diferentes recortes da fisioterapia em cabeça e pescoço para discutir casos reais de clínico para clínico.</p>
+                        <p>Samuel Lodovichi é fisioterapeuta há 18 anos.</p>
+                        <p>Com mestrado focado no papel do exercício na migrânea pela USP, hoje é um dos poucos fisioterapeutas membros da Sociedade Brasileira de Cefaleias e faz parte do Comitê de Cefaleia da Sociedade Brasileira para o Estudo da Dor. Atua como clínico diariamente, atendendo pacientes dos mais variados tipos de cefaleias.</p>
+                        <p>Fundador da Cranium Cursos, reúne na Maratona diferentes áreas da fisioterapia em cabeça e pescoço para discutir casos reais de clínico para clínico.</p>
                     </div>
                 </div>
                 <div className="order-1 lg:order-2 relative">

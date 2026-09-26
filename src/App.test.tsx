@@ -6,7 +6,7 @@ describe('App', () => {
   it('renders without crashing', async () => {
     render(<App />);
     await waitFor(() => {
-      expect(screen.getByText(/PENSAM CASOS REAIS/)).toBeInTheDocument();
+      expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent(/CASOS REAIS DE CABEÇA E PESCOÇO EM 4 NOITES/);
     });
   });
 

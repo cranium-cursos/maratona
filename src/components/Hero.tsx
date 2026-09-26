@@ -56,7 +56,7 @@ const Hero: React.FC = () => {
 
                 <h1 className="font-display text-3xl md:text-5xl lg:text-6xl font-black text-secondary dark:text-white leading-tight mb-6">
                     DESCUBRA COMO 4 ESPECIALISTAS PENSAM <br className="hidden md:block" />
-                    CASOS REAIS DE CABEÇA E PESCOÇO EM 4 ÁREAS, 4 NOITES
+                    CASOS REAIS DE CABEÇA E PESCOÇO EM 4 NOITES
                 </h1>
 
                 <p className="text-base md:text-xl text-slate-600 dark:text-slate-300 max-w-3xl leading-relaxed mb-10 px-2">

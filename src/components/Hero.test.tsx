@@ -9,7 +9,7 @@ const renderWithRouter = (ui: React.ReactElement) =>
 describe('Hero', () => {
   it('renders the main heading', () => {
     renderWithRouter(<Hero />);
-    expect(screen.getByText(/PENSAM CASOS REAIS/)).toBeInTheDocument();
+    expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('DESCUBRA COMO 4 ESPECIALISTAS PENSAM CASOS REAIS DE CABEÇA E PESCOÇO EM 4 NOITES');
   });
 
   it('renders all 4 expert images', () => {

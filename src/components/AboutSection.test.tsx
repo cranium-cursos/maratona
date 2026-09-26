@@ -15,6 +15,9 @@ describe('AboutSection', () => {
 
   it('renders bio text', () => {
     render(<AboutSection />);
-    expect(screen.getByText(/fisioterapeuta há mais de uma década/)).toBeInTheDocument();
+    expect(screen.getByText('Samuel Lodovichi é fisioterapeuta há 18 anos.')).toBeInTheDocument();
+    expect(screen.getByText(/mestrado focado no papel do exercício na migrânea pela USP/)).toBeInTheDocument();
+    expect(screen.getByText(/Comitê de Cefaleia da Sociedade Brasileira para o Estudo da Dor/)).toBeInTheDocument();
+    expect(screen.getByText(/diferentes áreas da fisioterapia em cabeça e pescoço/)).toBeInTheDocument();
   });
 });
